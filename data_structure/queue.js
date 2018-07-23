@@ -50,6 +50,8 @@ function hotPotato(nameList, num) {
     return queue.dequeue();
 }
 
-var names = ['John', 'Jack', 'Camila', 'Ingrid', 'Carl'];
-var winner = hotPotato(names, 10);
-console.log('Winner: ' + winner);
+module.exports=Queue;
+
+// var names = ['John', 'Jack', 'Camila', 'Ingrid', 'Carl'];
+// var winner = hotPotato(names, 10);
+// console.log('Winner: ' + winner);

@@ -48,3 +48,5 @@ function baseConvetor(decNumber, base) {
 
     return baseString;
 }
+
+module.exports=Stack;
