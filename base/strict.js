@@ -95,7 +95,6 @@
 // strict3("'use strict'; (function(){console.log(!this)})()");
 
 
-
 //
 // var x = 10;
 // delete(x);
@@ -111,8 +110,7 @@
 // eval("var y; delete y;");
 
 
-
-"use strict";
+// "use strict";
 // eval = 17;
 // arguments++;
 // ++eval;
@@ -122,4 +120,14 @@
 // function x(eval) {}
 // function arguments(){}
 // var y = function eval(){};
-var f = new Function("arguments", "'use strict';return 17;");
+// var f = new Function("arguments", "'use strict';return 17;");
+
+
+function f(a, b) {
+    'use strict';
+
+    a = 42;
+    return [a, b, arguments[0]];
+}
+var pair = f(17, 31);
+console.log(pair);
