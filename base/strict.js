@@ -60,6 +60,18 @@
 // eval("var x = 100;");
 // console.log(x);
 
-"use strict";
-eval("var x = 100;");
-console.log(x);
+// "use strict";
+// eval("var x = 100;");
+// console.log(x);
+
+
+
+// var x = 17;
+// var evalX = eval("var x = 42; x");
+// console.log(x);
+// console.log(evalX);
+
+// var x = 17;
+// var evalX = eval("'use strict'; var x = 42; x");
+// console.log(x);
+// console.log(evalX);
