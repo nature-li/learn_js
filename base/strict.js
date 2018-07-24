@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 
 // var obj1 = {};
@@ -12,7 +12,10 @@
 // console.log(obj2.x);
 
 
-var fixed = {};
-Object.preventExtensions(fixed);
-fixed.newProp = "phai";
-console.log(fixed.newProp);
+// var fixed = {};
+// Object.preventExtensions(fixed);
+// fixed.newProp = "phai";
+// console.log(fixed.newProp);
+
+
+delete Object.prototype;
