@@ -138,8 +138,19 @@
 // };
 // console.log(f());
 
-'use strict';
-var f = function () {
-    return arguments.callee;
-};
-console.log(f());
+// 'use strict';
+// var f = function () {
+//     return arguments.callee;
+// };
+// console.log(f());
+
+
+// "use strict";
+// function fun() {
+//     return this;
+// }
+// console.log(fun());
+// console.log(fun.call(2));
+// console.log(fun.apply(2));
+// console.log(fun.call(undefined));
+// console.log(fun.bind(true)());
