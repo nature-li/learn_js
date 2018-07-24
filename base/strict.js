@@ -30,10 +30,8 @@
 // console.log(sum(1, 2, 3));
 
 
-
 // 'use strict';
 // console.log(0o23);
-
 
 
 // 'use strict';
@@ -47,7 +45,6 @@
 //     (14).sailing = "home";
 //     "with".you = "far away";
 // })();
-
 
 
 // "use strict";
@@ -65,7 +62,6 @@
 // console.log(x);
 
 
-
 // var x = 17;
 // var evalX = eval("var x = 42; x");
 // console.log(x);
@@ -75,3 +71,43 @@
 // var evalX = eval("'use strict'; var x = 42; x");
 // console.log(x);
 // console.log(evalX);
+
+
+//
+// function strict1(str) {
+//     "use strict";
+//     eval(str);
+// }
+// strict1('(function(){console.log(!this)})()');
+// strict1('"use strict"; (function(){console.log(!this)})()');
+//
+// function strict2(f, str) {
+//     "use strict";
+//     return f(str);
+// }
+// strict2(eval, "(function(){console.log(!this)})()");
+// strict2(eval, "'use strict'; (function(){console.log(!this)})()");
+//
+// function strict3(str) {
+//     return eval(str);
+// }
+// strict3("(function(){console.log(!this)})()");
+// strict3("'use strict'; (function(){console.log(!this)})()");
+
+
+
+//
+// var x = 10;
+// delete(x);
+// console.log(x);
+//
+// 'use strict';
+// var x = 10;
+// delete(x);
+// console.log(x);
+
+
+"use strict";
+eval("var y; delete y;");
+
+
