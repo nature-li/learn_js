@@ -123,11 +123,23 @@
 // var f = new Function("arguments", "'use strict';return 17;");
 
 
-function f(a, b) {
-    'use strict';
+// function f(a, b) {
+//     'use strict';
+//
+//     a = 42;
+//     return [a, b, arguments[0]];
+// }
+// var pair = f(17, 31);
+// console.log(pair);
 
-    a = 42;
-    return [a, b, arguments[0]];
-}
-var pair = f(17, 31);
-console.log(pair);
+
+// var f = function () {
+//     return arguments.callee;
+// };
+// console.log(f());
+
+'use strict';
+var f = function () {
+    return arguments.callee;
+};
+console.log(f());
