@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 
 // var obj1 = {};
@@ -18,4 +18,48 @@
 // console.log(fixed.newProp);
 
 
-delete Object.prototype;
+// delete Object.prototype;
+
+// var o = {p: 1, p: 2};
+// console.log(o);
+
+
+// function sum(a, a, c) {
+//     return a + a + c;
+// }
+// console.log(sum(1, 2, 3));
+
+
+
+// 'use strict';
+// console.log(0o23);
+
+
+
+// 'use strict';
+// var sum = 010 + 1;
+// console.log(sum);
+
+
+// (function f() {
+//     "use strict";
+//     false.true = "";
+//     (14).sailing = "home";
+//     "with".you = "far away";
+// })();
+
+
+
+// "use strict";
+// var x = 17;
+// with (x) {
+//     console.log(x);
+// }
+
+
+// eval("var x = 100;");
+// console.log(x);
+
+"use strict";
+eval("var x = 100;");
+console.log(x);
