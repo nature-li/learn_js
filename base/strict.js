@@ -154,3 +154,15 @@
 // console.log(fun.apply(2));
 // console.log(fun.call(undefined));
 // console.log(fun.bind(true)());
+
+
+'use strict';
+function restricted() {
+    // console.log(restricted.caller);
+    // console.log(restricted.arguments);
+}
+
+function privilegeInvoker() {
+    return restricted();
+}
+privilegeInvoker();
