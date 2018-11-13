@@ -75,3 +75,31 @@ var EventUtil = {
         }
     }
 };
+
+
+function convertToArray(nodes) {
+    var array = null;
+    try {
+        array = Array.prototype.slice.call(nodes, 0);
+    } catch (ex) {
+        array = [];
+        for (var i = 0, len = nodes.length; i < len; i++) {
+            array.push(nodes[i]);
+        }
+    }
+
+    return array;
+}
+
+(function (someNode) {
+    if (someNode.nextSibling === null) {
+        alert("Last node in the parent's childNodes list.");
+    } else if (someNode.previousSibling === null) {
+        alert("First node in the parent's childNodes list.");
+    }
+})(null);
+
+
+function isArray(value) {
+    return Object.prototype.toString.call(value) === '[object Array]';
+}
